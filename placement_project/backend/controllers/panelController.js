@@ -1,0 +1,1 @@
+import Panel from "../models/Panel.js"; export const list=async(req,res)=>res.json(await Panel.find()); export const create=async(req,res)=>res.status(201).json(await Panel.create(req.body));

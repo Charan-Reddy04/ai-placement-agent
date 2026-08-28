@@ -1,0 +1,1 @@
+export function evaluateMatch(predicted,expected){return {correct:predicted===expected};}

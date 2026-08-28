@@ -1,0 +1,1 @@
+export function placementAgent(){return {humanApprovalRequired:true,steps:["extract requirements","check eligibility","rank candidates","schedule interviews","notify stakeholders","report exceptions"]};}

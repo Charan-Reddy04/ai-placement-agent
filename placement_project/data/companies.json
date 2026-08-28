@@ -1,0 +1,12 @@
+[
+  {
+    "name": "TechNova",
+    "industry": "Software",
+    "contactEmail": "hr@technova.example"
+  },
+  {
+    "name": "CloudWorks",
+    "industry": "Cloud & SaaS",
+    "contactEmail": "careers@cloudworks.example"
+  }
+]

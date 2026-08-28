@@ -1,0 +1,1 @@
+export const interviewEmail = (name,date,time,room) => `Hi ${name}, your interview is scheduled for ${date} at ${time}. Venue: ${room}.`;

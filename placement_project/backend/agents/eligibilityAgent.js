@@ -1,0 +1,1 @@
+import {checkEligibility} from "../services/eligibilityService.js"; export const runEligibilityAgent=(job,student)=>checkEligibility(job,student);

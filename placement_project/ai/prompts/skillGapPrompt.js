@@ -1,0 +1,1 @@
+export const skillGapPrompt = profile => `Analyze this student profile and identify the highest-impact skill gaps for placement readiness. ${JSON.stringify(profile)}`;

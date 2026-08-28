@@ -1,0 +1,3 @@
+import Job from "../models/Job.js"; import Student from "../models/Student.js"; import Eligibility from "../models/Eligibility.js"; import {runEligibilityAgent} from "../agents/eligibilityAgent.js";
+export const check=async(req,res)=>{const [job,student]=await Promise.all([Job.findById(req.body.job),Student.findById(req.body.student)]); if(!job||!student)return res.status(404).json({message:"Job or student not found"}); const result=await runEligibilityAgent(job,student); res.json(await Eligibility.create({job,student,...result}));};
+export const list=async(req,res)=>res.json(await Eligibility.find().populate("job student").sort({createdAt:-1}));

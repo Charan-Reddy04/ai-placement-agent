@@ -1,0 +1,1 @@
+export const candidateMatchingPrompt = (job,candidate) => `Rank this candidate for the job. Explain matched and missing skills. Return JSON. Job: ${JSON.stringify(job)} Candidate: ${JSON.stringify(candidate)}`;

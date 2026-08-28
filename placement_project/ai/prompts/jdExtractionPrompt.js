@@ -1,0 +1,1 @@
+export const jdExtractionPrompt = jd => `Extract structured eligibility rules and required skills from this job description. Return JSON only.\n${jd}`;

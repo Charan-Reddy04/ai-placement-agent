@@ -1,0 +1,1 @@
+import {matchCandidate} from "../services/matchingService.js"; export const runMatchingAgent=(job,student)=>matchCandidate(job,student);

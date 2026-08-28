@@ -1,0 +1,1 @@
+import Company from "../models/Company.js"; export const list=async(req,res)=>res.json(await Company.find().sort({createdAt:-1})); export const create=async(req,res)=>res.status(201).json(await Company.create(req.body));

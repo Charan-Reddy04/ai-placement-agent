@@ -1,0 +1,12 @@
+import { Router } from "express";
+import auth from "../middleware/authMiddleware.js";
+import { roles } from "../middleware/roleMiddleware.js";
+import { list, create, analyze, reanalyze, confirmRequirements, apply } from "../controllers/jobController.js";
+const r=Router(); r.use(auth);
+r.get("/", list);
+r.post("/:id/apply", roles("student"), apply);
+r.post("/", roles("admin"), create);
+r.post("/analyze", roles("admin"), analyze);
+r.post("/:id/reanalyze", roles("admin"), reanalyze);
+r.post("/:id/confirm", roles("admin"), confirmRequirements);
+export default r;

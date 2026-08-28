@@ -1,0 +1,1 @@
+import Room from "../models/Room.js"; export const list=async(req,res)=>res.json(await Room.find()); export const create=async(req,res)=>res.status(201).json(await Room.create(req.body));

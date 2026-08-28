@@ -1,0 +1,46 @@
+[
+  {
+    "name": "Aarav Kumar",
+    "email": "aarav@example.com",
+    "branch": "CSE",
+    "cgpa": 8.8,
+    "backlogs": 0,
+    "graduationYear": 2027,
+    "skills": [
+      "JavaScript",
+      "React",
+      "Node.js",
+      "MongoDB",
+      "SQL",
+      "DSA"
+    ]
+  },
+  {
+    "name": "Priya Sharma",
+    "email": "priya@example.com",
+    "branch": "CSE",
+    "cgpa": 8.2,
+    "backlogs": 0,
+    "graduationYear": 2027,
+    "skills": [
+      "Python",
+      "SQL",
+      "Java",
+      "DSA"
+    ]
+  },
+  {
+    "name": "Rahul Reddy",
+    "email": "rahul@example.com",
+    "branch": "ECE",
+    "cgpa": 7.9,
+    "backlogs": 1,
+    "graduationYear": 2027,
+    "skills": [
+      "C++",
+      "Python",
+      "React",
+      "SQL"
+    ]
+  }
+]

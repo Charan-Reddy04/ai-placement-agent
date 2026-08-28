@@ -1,0 +1,14 @@
+import {Router} from "express";
+import auth from "../middleware/authMiddleware.js";
+import {roles} from "../middleware/roleMiddleware.js";
+import {list,create,auto,plan,approve,reject,complete,setResult} from "../controllers/interviewController.js";
+const r=Router(); r.use(auth);
+r.get("/",list);
+r.post("/",roles("admin"),create);
+r.post("/auto",roles("admin"),auto);
+r.post("/plan",plan);
+r.post("/:id/approve",roles("admin"),approve);
+r.post("/:id/reject",roles("admin"),reject);
+r.post("/:id/complete",roles("admin"),complete);
+r.post("/:id/result",roles("admin"),setResult);
+export default r;

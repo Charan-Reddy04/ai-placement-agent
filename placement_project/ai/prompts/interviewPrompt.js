@@ -1,0 +1,1 @@
+export const interviewPrompt = context => `Suggest an interview plan for this placement event. Avoid making final hiring decisions. ${JSON.stringify(context)}`;
