@@ -4,7 +4,7 @@ import { sendUpcomingInterviewReminders } from "./services/reminderService.js";
 const app=express();
 app.disable("x-powered-by");
 app.use(cors({
-  origin: process.env.FRONTEND_URL ? process.env.FRONTEND_URL.split(",").map((v) => v.trim()) : true,
+  origin: "https://ai-placement-agent-07.onrender.com",
   credentials: false
 }));
 app.use(express.json({ limit: "1mb" })); const __dirname=path.dirname(fileURLToPath(import.meta.url)); app.use("/uploads",express.static(path.join(__dirname,"uploads")));
