@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const api = axios.create({
-  baseURL: import.meta.env.VITE_API_URL || "https://ai-placement-agent-6gtt.onrender.com/api"
+  baseURL:"https://ai-placement-agent-6gtt.onrender.com/api"
 });
 
 api.interceptors.request.use((config) => {
